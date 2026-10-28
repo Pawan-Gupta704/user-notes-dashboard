@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* NEW: Center header when logged out */
+.center-header {
+  justify-content: center;
+}
+
+.topbar h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.userbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+}
+
+.auth-card {
+  max-width: 380px;
+  margin: 40px auto;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.tab {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #eef1f5;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4b5563;
+}
+.tab.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form.row {
+  flex-direction: row;
+}
+.form.row input {
+  flex: 1;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.btn.primary {
+  background: #2563eb;
+  color: #fff;
+}
+.btn.ghost {
+  background: #e5e7eb;
+  color: #374151;
+}
+.btn.danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.message-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.message-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+.message-body p {
+  margin: 0 0 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* NEW: Error and Success messages */
+.error {
+  color: #dc2626;
+  font-size: 0.88rem;
+  margin: 4px 0;
+}
+
+.success {
+  color: #059669;
+  font-size: 0.88rem;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+/* NEW: Forgot Password links */
+.auth-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.link-btn:hover {
+  color: #1d4ed8;
+}
